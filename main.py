@@ -5,8 +5,7 @@ def restore_db_from_snapshot():
     
     snapshot_id = input("Enter the snapshot ID to restore from: ").strip()
     db_instance_id = f"{snapshot_id}-restored-instance".replace('_', '-')
-    
-    db_instance_class = 'db.t4g.micro' # Example instance class                
+                  
     engine = 'mysql'                                  
     allocated_storage = 20 # Example storage size in GB
     
